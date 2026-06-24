@@ -28,6 +28,44 @@ We are building BookMyVenue iteratively through **4 Phases**:
 - **Phase 2 & 3: Feature & Modularization:** Implementing features module by module and refining the architecture.
 - **Phase 4: Scalability:** Building a fully scalable, cloud-native solution for high traffic.
 
+
+POJECT SETUP 
+
+
+1. Prerequisites
+Ensure you have Python installed on your system. During installation, it is critical to check the "Add Python to PATH" box.
+
+2. Initializing the Virtual Environment
+We use a virtual environment (venv) to keep project-specific dependencies isolated from your global system Python.
+
+Run the following commands in your project root directory:
+
+PowerShell
+# Create the virtual environment
+python -m venv venv
+
+# Set execution policy to allow script activation (Run this once)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# Activate the virtual environment
+.\venv\Scripts\Activate.ps1
+3. Verification
+Once the virtual environment is activated, your terminal prompt will display (venv) at the beginning. You can verify that your environment is correctly configured by checking the versions:
+
+PowerShell
+python --version
+pip --version
+4. Installing Django
+With the virtual environment active, you can install project dependencies without affecting other projects on your machine:
+
+PowerShell
+pip install django
+5. Starting the Project
+To initialize your Django project, use the following command:
+
+PowerShell
+django-admin startproject bookmyvenue
+
 ## 🤝 How to Contribute
 
 This is a collective effort, and everyone in the WeCode community shares the benefits of what we build! Whether you're a beginner or a pro, we would love your help. 
